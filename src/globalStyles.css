@@ -1,0 +1,299 @@
+.App {
+  width: 100%;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #000000;
+  opacity: 0.9;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+}
+
+header {
+  margin: 0;
+  width: 100%;
+  background-color: #FFFAF0;
+}
+
+nav {
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+
+}
+
+nav ul li {
+  padding: 0 30px;
+  font-size: small;
+  font-weight: bolder;
+}
+
+#d {
+  color: #ff0000;
+}
+
+.change-theme-btn {
+  border: solid black 0.1px;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+  background-color: transparent;
+}
+
+.dark .change-theme-btn {
+  border: solid white 0.1px;
+}
+
+.change-theme-btn:hover {
+  background-color: #af2020;
+}
+
+.link-estilo {
+  text-decoration: none !important;
+  color: #000000;
+  transition: 0.3s ease-out;
+}
+
+.link-estilo:hover {
+  color: #af2020;
+}
+
+.dark .link-estilo {
+  color: white;
+}
+
+.dark .link-estilo:hover {
+  color: #af2020;
+}
+
+
+/* ------------------------------ CARDS ---------------------------------*/
+
+.favs-title {
+  display: flex;
+  justify-content: center;
+}
+
+.favs-empty {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0 20px 0;
+}
+
+.dark .favs-title h1 {
+  color: #fff;
+}
+
+.card-grid {
+  margin: 0;
+  padding: 30px 0 100px 100px;
+  display: grid;
+  flex-direction: column;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 23%));
+  gap: 20px;
+}
+
+.detail-box {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+#detail-box-title {
+  display: flex;
+  justify-content: center;
+}
+
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  border: solid #000000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dark .card-detail {
+  border: solid #FFFAF0;
+}
+
+.img-card-detail {
+  width: 500px;
+}
+
+.grid-container {
+  margin: 0;
+  display: grid;
+  flex-direction: column;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 23%));
+  gap: 20px;
+}
+
+.img-link {
+  padding-top: 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  border: #000000 solid 2px;
+  border-radius: 10px ;
+  padding: 10px 15px 35px;
+}
+
+.dark .link {
+  border: #fff solid 2px;;
+}
+
+.fav-btn {
+  position: relative;
+  top: -40px;
+  left: 52px;
+  padding: 7px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: 0.3s ease-out;
+}
+
+.fav-btn:hover {
+  background-color: #f3020269;
+}
+
+.fav-btn-detail {
+  padding: 7px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: 0.3s ease-out;
+}
+
+.fav-btn-detail:hover {
+  background-color: #f3020269;
+}
+
+.link p {
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #FFFAF0;
+}
+
+.fav-btn {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------------------------ FOOTER ---------------------------------------*/
+
+footer {
+  
+  background-color: #574a4a;
+  display: flex;
+  justify-content: space-around;
+}
+
+#footer-icon-dh {
+  width: 290px;
+}
+
+.footer-icon {
+  width: 30px;
+  padding: 13px 30px;
+}
+
+
+/* ------------------------------ FORM ------------------------*/
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:  0 0 55px 0;
+}
+
+.form {
+  max-width: 300px;
+  padding: 20px 70px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+#error-message {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
